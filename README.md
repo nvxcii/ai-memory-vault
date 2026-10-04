@@ -31,6 +31,10 @@ Starter files for the system. Every spot that needs your information is marked `
 - **[DAILY-NOTE.md](templates/DAILY-NOTE.md):** the daily-note template. Goes **inside your vault** at `01 - Daily Notes/Daily Note Template.md`. Every daily note gets created from it, so the log keeps one consistent, scannable shape.
 - **[MEMORY.md](templates/MEMORY.md):** the pointer for Claude Code's own memory. Goes in **Claude Code's project folder** (`~/.claude/projects/...`, not your vault). It redirects the native memory back into the vault so you never end up with two memory layers that drift apart.
 
+## Chain of Records integration
+
+See [Chain of Records source integration](docs/chain-of-records.md) for the synthetic Emergent-Stat export source, validation contract, provenance, and private-data boundaries. This documents repository ingestion; it does not install model connectors or enable live-case reporting.
+
 ## Updating
 
 The build script, the templates, and the wizard improve continuously. If you keep a copy of this repo on disk, say to your agent: **"pull the latest ai-memory-vault and tell me what changed."** Updates only ever touch the repo's own files. Your vault, your notes, and your CLAUDE.md are yours and are never inside this repo, so nothing you built can be overwritten. Installed through fullstack-agent? `./fullstack-agent/update.sh` updates every piece at once and prints what changed.
